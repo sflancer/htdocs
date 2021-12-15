@@ -1,2 +1,3 @@
+<p>from footer</p>
 </body>
 </html>

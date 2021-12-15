@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.flex-container {
+  display: flex;
+  height: 200px;
+  flex-wrap:wrap;
+  align-items:end;
+  background-color: DodgerBlue;
+  transition:background-color 1s;
+  overflow-y:scroll;
+} 
+.flex-container > div {
+border:1px solid black;
+  background-color: #f1f1f1;
+  margin: 10px;
+  text-align: center;
+    height: 250px;
+  font-size: 30px;
+  flex-basis:100px;
+  flex-grow:1;
+}
+@media (max-width: 500px) {
+  body {
+    background-color: lightblue;
+  }
+  .flex-container{
+  background-color: red;
+  transition:background-color 2s;
+
+  }
+  .flex-container > div {
+  
+  flex-basis:500px;
+  }
+}
+</style>
+</head>
+<body>
+
+<h1>The align-items Property</h1>
+
+<p>The "align-items: center;" aligns the flex items in the middle of the container:</p>
+
+<div class="flex-container">
+  <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, excepturi.</div>
+  <div>2</div>
+  <div>3</div> 
+  <div>4</div>
+  <div>5</div>
+  <div>6</div> 
+  <div>7</div>
+  <div>8</div>
+  <div>9</div> 
+  <div>10</div>
+  <div>11</div>
+  <div>12</div> 
+  <div>13</div>
+  <div>14</div>
+  <div>15</div> 
+  <div>16</div>
+  <div>17</div>
+  <div>18</div> 
+</div>
+
+</body>
+</html>
