@@ -1,10 +1,69 @@
-h1 {
-    color: #dd1a1a;
-    font-family: serif;
+@font-face {
+    font-family: robo;
+    src: url(/fonts/Roboto-Black.ttf);
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1 {
+    color: hsl(0, 43%, 93%);
+    font-family: robo;}
 
 img {
     max-width: 90%;
     height: auto;
+    
+}
+#conTainEr{
+    position:relative;
+    width: 95%;
+    margin:20px auto;
+    background-color:blueviolet;
+    height: 80vh;
+}
+#secConT{
+    height: calc(100vh - 80vh);
+    background-color: coral;
+}
 
+.heAdConT #naVigate{
+    background-color: rgb(95, 42, 22);
+    width: 95%;
+    margin: 5px auto;
+}
+#naVigate ul{
+    list-style: none;
+    background-color: rgb(50, 20, 220);;
+}
+
+li:nth-child(2n){
+    /* clear: left; */
+    font-size: larger;
+    background-color: rgb(68, 172, 68);
+}
+#naVigate ul> li{
+    margin-right: 2px;
+    border: 1px solid red;
+    /* background-color: cyan; */
+    float: left;
+}
+/* #naVigate::after{
+    clear: both;
+    content: "";
+    display: block;
+} */
+ clearFIX{
+    clear: left;
+}
+
+li:nth-last-child(2){
+    position: absolute;
+    right: calc(-95% + 1095px);
+    top: 15px;
+    color: wheat;
+    float:right;
+    font-weight: 800;
+    overflow-y: hidden;
 }
